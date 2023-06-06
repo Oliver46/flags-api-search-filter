@@ -12,7 +12,7 @@ $(document).ready(function(){
                             <img src="${element.flags.png}">
                             <div class="card-body">
                                 <h3 clas="card-title">${element.name.common}</h3>
-                                <p class="card-text pb-0 mb-0"><span class="fw-bold">Population:</span>${element.population}</p>
+                                <p class="card-text pb-0 mb-0"><span class="fw-bold">Population:</span>${element.population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                                 <p class="card-text pb-0 mb-0 region"><span class="fw-bold">Region: </span><span> ${element.region}<span></p>
                                 <p class="card-text"><span class="fw-bold">Capital:</span> ${element.capital}</p>
                             </div>
